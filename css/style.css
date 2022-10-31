@@ -1,0 +1,73 @@
+body {
+  min-height: 100vh;
+  margin:0;
+}
+
+header{
+  min-height:50px;
+}
+
+#navbar{
+  background-color: rgb(46, 45, 45) !important;
+}
+
+footer{
+  
+  background-color: rgb(12, 56, 58);
+}
+
+#divi{
+  display: inline;
+  float: left;
+}
+#list{
+  display: inline;
+  float: left;
+}
+
+footer ul li{
+  display: inline-block;
+  margin-left: 20px;
+  padding: 10px;
+  padding-left: 60px;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  flex:1;
+}
+
+#cartas{
+  margin-right: 2px;
+  display: flex;
+}
+
+#card1{
+  border: 2px solid blue;
+}
+#card2{
+  border: 2px solid rgb(2, 75, 38);
+}
+#card3{
+  border: 2px solid rgb(218, 168, 4);
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.content-buy{
+  height: 50px;
+}
+
+.border-color {
+  border-color: blue !important;
+}

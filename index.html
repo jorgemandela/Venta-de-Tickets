@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" id="navbar" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Conf Bs As</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a style="color:rgb(124, 126, 124);"href="#">La conferencia </a></li>
+        <li><a style="color:rgb(124, 126, 124);"href="#">Los oradores</a></li>
+        <li><a style="color:rgb(124, 126, 124);" href="#">El lugar y la fecha</a></li>
+        <li><a href="#">Conviertete en orador</a></li>
+        <li><a style="color:green;" href="#">Comprar tickets</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">La conferencia </a></li>
+        <li><a href="#">Los oradores</a></li>
+        <li><a href="#">El lugar y la fecha</a></li>
+        <li><a href="#">Conviertete en orador</a></li>
+        <li><a href="#">Comprar tickets</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row" id="cartas">
+        <div class="card col s12 m3" id="card1">
+          <div class="icon-block">
+            <h3 class="center">Estudiante</h3>
+            <p class="light center-align">
+              <span class="center-align"> Tienen un descuento </span>
+            </p>
+            <p class="light center-align">
+              <span class="center-align"> <b>80%</b> </span>
+            </p>
+            <p class="light center-align">
+              <span class="center-align"> <b>* presentar documentacion</b> </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card col s12 m3" id="card2">
+          <div class="icon-block">
+            <h3 class="center ">Trainee</h3>
+            <p class="light center-align">
+              <span class="center-align"> Tienen un descuento </span>
+            </p>
+            <p class="light center-align">
+              <span class="center-align"> <b>50%</b> </span>
+            </p>
+            <p class="light center-align">
+              <span class="center-align"> <b>* presentar documentacion</b> </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card col s12 m3" id="card3">
+          <div class="icon-block">
+            <h3 class="center ">Junnior</h3>
+            <p class="light center-align">
+              <span class="center-align"> Tienen un descuento </span>
+            </p>
+            <p class="light center-align">
+              <span class="center-align"> <b>15%</b> </span>
+            </p>
+            <p class="light center-align">
+              <span class="center-align"> <b>* presentar documentacion</b> </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h5 class="center-align">
+        Venta
+      </h5>
+    </div>
+
+    <div class="section">
+      <h3 class="center-align">
+        VALOR DE TICKET $200
+      </h3>
+    </div>
+
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Nombre</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_telephone" type="tel" class="validate">
+            <label for="icon_telephone">Apellido</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Correo</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">exposure</i>
+            <input id="quantity" type="text" class="validate">
+            <label for="quantity">Cantidad</label>
+          </div>
+          <div class="input-field col s6">
+            <select id="category">
+              <option value="80">Estudiante</option>
+              <option value="50">Trainee</option>
+              <option value="15">Junior</option>
+            </select>
+            <label>Categoria</label>
+          </div>
+        </div>
+
+        <div class="content-buy light-blue lighten-4">
+          <span> Total a pagar:</span> <span id="total"> </span>$
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col s6">
+            <button class="btn light-green accent-6" type="submit" name="action">
+              Borrar
+              <i class="material-icons right">delete_forever</i>
+            </button>
+          </div>
+
+          <div class="col s6">
+            <span onclick="resume();" class="btn light-green accent-6">
+              Resumen
+              <i class="material-icons right">send</i>
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <br><br>
+  </div>
+  <footer>
+    <div id="divi">
+          <ul id="list">
+            <li><a class="white-text" href="#!">Preguntas Frecuentes</a></li>
+            <li><a class="white-text" href="#!">Contactanos</a></li>
+            <li><a class="white-text" href="#!">Prensa</a></li>
+            <li><a class="white-text" href="#!">Conferencia</a></li>
+            <li><a class="white-text" href="#!">Terminos y condiciones</a></li>
+            <li><a class="white-text" href="#!">Privacidad</a></li>
+            <li><a class="white-text" href="#!">Estudiantes</a></li>
+          </ul>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/index.js"></script>
+
+  </body>
+</html>
